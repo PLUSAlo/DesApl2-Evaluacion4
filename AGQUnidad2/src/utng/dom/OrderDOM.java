@@ -12,7 +12,7 @@ import org.w3c.dom.NodeList;
 import utng.model.*;
 
 public class OrderDOM {
-	private String pathFile = "C:\\Users\\Alondra\\Desktop\\Aplicaciones II\\workspace\\AGQUnidad2\\src\\utng\\data\\orders.xml";
+	private String pathFile = "C:\\Users\\Alondra\\git\\AGQUnidad2\\src\\utng\\data\\orders.xml";
 	
 	public void add(Order data) {
 		try {

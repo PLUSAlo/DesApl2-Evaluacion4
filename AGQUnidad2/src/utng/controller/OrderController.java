@@ -51,7 +51,7 @@ public class OrderController extends HttpServlet {
     		order.setShipAddress(request.getParameter("shipAddress"));
 
     		if(order.getId()=="") {
-    			String newId="std"+String.format("%05d",1);
+    			String newId="ord"+String.format("%05d",1);
     			order.setId(newId);
     			if(orders.size()>0) {
     				ids.clear();
@@ -59,7 +59,7 @@ public class OrderController extends HttpServlet {
     					ids.add(s.getId());
     				}
     				for(int i=0; i<=ids.size();i++) {
-    				newId="std"+String.format("%05d",i+1);
+    				newId="ord"+String.format("%05d",i+1);
     				if(!ids.contains(newId)) {
     					order.setId(newId);
     					break;
